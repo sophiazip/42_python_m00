@@ -4,7 +4,7 @@ def _helper_harvest(harvest_days: int, until_harvest: int = 0) -> None:
         _helper_harvest(harvest_days, until_harvest + 1)
 
 
-def ft_count_harvest_recursive() -> int:
+def ft_count_harvest_recursive() -> None:
     harvest_days = int(input("Days until harvest: "))
     _helper_harvest(harvest_days)
     print("Harvest time!")
